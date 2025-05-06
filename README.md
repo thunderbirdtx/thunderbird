@@ -18,7 +18,7 @@ npm install thunderbird
 ```js
 const thunderbird = require("thunderbird");
 //this method will go away, right now this is for local testing only
-thunderbird.init({ apiUrl: "http://localhost:3001" }); // or your deployed API
+thunderbird.init({ apiUrl: "http://localhost:3001" }); // will change when we launch API
 
 (async () => {
   const result = await thunderbird.track("0xYourTxHash");
@@ -66,14 +66,30 @@ await thunderbird.scheduleWait({
 
 ---
 
-### `getWaitStatus(jobId)`
-Check the status of a scheduled `wait` job.
+### `getWaitStatus(jobId, options?)`
+
+Check the status of a scheduled `wait` job. Optionally poll until the job is complete.
+
+#### Basic usage (single request):
 
 ```js
 const status = await thunderbird.getWaitStatus(jobId);
+console.log(status);
 ```
 
----
+#### With polling:
+
+```js
+const status = await thunderbird.getWaitStatus(jobId, {
+  poll: true,
+  interval: 3000,  // check every 3 seconds
+  timeout: 60000,  // give up after 60 seconds
+});
+console.log("Final status:", status);
+```
+
+- Returns an object with current job status and metadata.
+- Statuses include: `pending`, `confirmed`, or `failed`.
 
 ### `sendBundle({ signedTxs })`
 Send a bundle of transactions through Flashbots.
