@@ -1,0 +1,9 @@
+{
+  "name": "thunderbird-gas",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Save Ethereum gas with smart scheduling, Flashbots bundles, and simulation.",
+  "keywords": ["ethereum", "gas", "flashbots", "sdk"],
+  "author": "Thunderbird Labs",
+  "license": "MIT"
+}
