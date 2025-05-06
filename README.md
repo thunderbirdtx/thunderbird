@@ -8,7 +8,7 @@ This SDK connects your app or bot to the Thunderbird Gas Optimization API.
 ##  Installation
 
 ```bash
-npm install thunderbird-gas
+npm install thunderbird
 ```
 
 ---
