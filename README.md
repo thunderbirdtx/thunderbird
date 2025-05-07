@@ -153,7 +153,7 @@ The Thunderbird API is private infrastructure operated by the team.
 
 ---
 
-### Signing Transactions
+## Signing Transactions
 
 This SDK never requires your **private key** directly, you should sign transactions locally in your own environment or with a secure wallet.
 
@@ -184,6 +184,8 @@ const signedTx = await wallet.signTransaction(tx);
  [Ethers.js `signTransaction` Docs](https://docs.ethers.org/v5/api/signer/#Signer-signTransaction)
 
 >  **Important**: Always sign locally. Never transmit your private key to an external server.
+
+---
 
 ##  Get Involved
 
