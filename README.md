@@ -123,6 +123,29 @@ thunderbird.init({ apiUrl: "http://localhost:3001" });
 
 ---
 
+## Testing
+
+This SDK uses [Jest](https://jestjs.io/) — JavaScript testing framework for unit testing.
+
+To run tests locally:
+```npm install
+npm test
+```
+
+Tests are located in the __tests__/ directory and use [axios-mock-adapter](https://www.npmjs.com/package/axios-mock-adapter) to mock API requests.
+
+Example test output:
+
+``` PASS  __tests__/track.test.js
+  ✓ should return tx data from the API (10 ms)
+  ✓ should throw if the API fails (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+```
+
+---
+
 ##  API Access
 
 The SDK is open source under the MIT license.  

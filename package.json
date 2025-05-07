@@ -3,7 +3,19 @@
   "version": "0.1.0",
   "main": "index.js",
   "description": "Save Ethereum gas with smart scheduling, Flashbots bundles, and simulation.",
-  "keywords": ["ethereum", "gas", "flashbots", "sdk"],
+  "keywords": [
+    "ethereum",
+    "gas",
+    "flashbots",
+    "sdk"
+  ],
   "author": "Thunderbird Labs",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "axios-mock-adapter": "^2.1.0",
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
