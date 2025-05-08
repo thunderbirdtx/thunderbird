@@ -197,3 +197,8 @@ Follow us on Twitter [@Thunderbirdtx](https://twitter.com/Thunderbirdtx) and rea
 ##  License
 
 MIT — feel free to fork and build with it.
+
+---
+
+![Lint](https://github.com/thunderbirdtx/thunderbird/actions/workflows/lint.yml/badge.svg)
+
