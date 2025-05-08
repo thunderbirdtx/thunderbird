@@ -20,6 +20,7 @@
     "jest": "^29.7.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./api ./__tests__ ./utils"
   }
 }
