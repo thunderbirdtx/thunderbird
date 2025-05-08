@@ -1,6 +1,6 @@
 # 🦅 Thunderbird Gas SDK
 
-![Lint](https://github.com/thunderbirdtx/thunderbird/actions/workflows/lint.yml/badge.svg)
+![Lint](https://github.com/thunderbirdtx/thunderbird/actions/workflows/lint.yml/badge.svg) ![Tests](https://github.com/thunderbirdtx/thunderbird/actions/workflows/test.yml/badge.svg)
 
 Save Ethereum gas. Schedule smarter transactions. Send bundles via Flashbots.  
 This SDK connects your app or bot to the Thunderbird Gas Optimization API.
