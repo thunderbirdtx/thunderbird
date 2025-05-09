@@ -115,6 +115,35 @@ await thunderbird.simulateTx({
 
 ---
 
+## Logging
+
+The Thunderbird SDK includes a built-in logger to help you debug and monitor transaction behavior.
+
+To enable logging, set the environment variable:
+
+```bash
+THUNDERBIRD_DEBUG=true 
+```
+
+Then use it anywhere in your code:
+
+```js
+const thunderbird = require('thunderbirdtx');
+
+thunderbird.logger.info("Tracking transaction...");
+thunderbird.logger.debug("Full response:", response);
+```
+
+Log levels available:
+- `info`
+- `warn`
+- `error`
+- `debug` (only prints when `THUNDERBIRD_DEBUG=true`)
+
+The logger uses color-coded output (via `chalk`) for readability in CLI environments.
+
+---
+
 ##  Local Development
 
 If you’re running the API locally:
