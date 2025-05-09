@@ -22,5 +22,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint ./api ./__tests__ ./utils"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
   }
 }
