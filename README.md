@@ -225,6 +225,18 @@ Follow us on Twitter [@Thunderbirdtx](https://twitter.com/Thunderbirdtx) and rea
 
 ---
 
+##  Support the Project
+
+If this tool saves you gas, consider donating:
+
+```
+0x225eb7fEF5308Fd49F1a3A2eF5c0Fd803C4b9011
+```
+
+Thank you for supporting open Ethereum infra.
+
+---
+
 ##  License
 
 MIT — feel free to fork and build with it.
